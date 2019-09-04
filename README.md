@@ -5,6 +5,8 @@ This repository introduces different Explainable AI approaches and demonstrates 
 2. [LIME](https://github.com/marcotcr/lime)
 3. [SHapley Additive exPlanations (SHAP)](https://github.com/slundberg/shap) - **WIP**
 
+<img src="pictures/example_original_ant.png" alt="Original Image with Ant" height="250"/><img src="pictures/example_cam_ant.png" alt="Image with CAM heatmap" height="250" width="350"/>
+
 ## Dataset
 
 The notebook uses the PyTorch hymenoptera dataset, which can be downloaded [here](https://download.pytorch.org/tutorial/hymenoptera_data.zip). The dataset consists of 397 images of bees and ants which were split into a train, test and validation set as follows:
@@ -53,15 +55,29 @@ All relevant settings can be adjusted in the third cell of the notebook. These p
 
 ### CAMs
 
+#### Ants
 
+<img src="pictures/cam_ants.png" alt="Image of Ants with CAM heatmaps"/>
+
+#### Bees
+
+<img src="pictures/cam_bees.png" alt="Image of Bees with CAM heatmaps"/>
 
 ### LIME
 
+#### Ants
 
+<img src="pictures/lime_ants.png" alt="Image of Ants with LIME superpixels"/>
+
+#### Bees
+
+<img src="pictures/lime_bees.png" alt="Image of Bees with LIME superpixels"/>
 
 ### SHAP
 
 **WIP**
+
+<img src="pictures/shap.png" alt="Image of SHAP predictions"/>
 
 ## TODO
 
