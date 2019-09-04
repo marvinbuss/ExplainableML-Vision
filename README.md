@@ -16,7 +16,7 @@ The notebook uses the PyTorch hymenoptera dataset, which can be downloaded [here
 
 ## Models for transfer learning
 
-The notebook allows to perform transfer learning using various pretrained models. The list includes:
+The notebook allows to perform transfer learning using various pretrained models from [torchvision](https://pytorch.org/docs/stable/torchvision/models.html). The list includes:
 
 - Densenet-161
 - ResNet-152
@@ -41,8 +41,8 @@ All relevant settings can be adjusted in the third cell of the notebook. These p
 - `NUM_WORKERS`: How many subprocesses to use for data loading. 0 means that the data will be loaded in the main process.
 - `LEARNING_RATE`: Initial learning rate that should be used for training.
 - `USE_ADAM_OPTIM`: Set to true, if you want to use the Adam optimizer. Set to false, if you want to use the SGD optimizer. 
-- `MOMENTUM`: Hyperparameter of the SGD optimizer.
-- `BETA_1`, `BETA_2`, `EPSILON`, `WEIGHT_DECAY`: Hyperparameters of the Adam optimizer.
+- `MOMENTUM`: Hyperparameter of the [SGD optimizer](https://pytorch.org/docs/stable/optim.html#torch.optim.SGD).
+- `BETA_1`, `BETA_2`, `EPSILON`, `WEIGHT_DECAY`: Hyperparameters of the [Adam optimizer](https://pytorch.org/docs/stable/optim.html#torch.optim.Adam).
 - `NUM_EPOCHS`: Number of epochs in the training process.
 - `DECAY_STEP_SIZE`, `GAMMA`: Hyperparameters of the [StepLR learning rate scheduler](https://pytorch.org/docs/stable/optim.html#torch.optim.lr_scheduler.StepLR).
 - `BASE_LR`, `MAX_LR`, `STEP_SIZE_UP`, `STEP_SIZE_DOWN`, `MODE_CYCLIC`: Hyperparameters of the [cyclic learning rate scheduler](https://pytorch.org/docs/stable/optim.html#torch.optim.lr_scheduler.CyclicLR).
