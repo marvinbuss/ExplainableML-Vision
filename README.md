@@ -1,4 +1,4 @@
-# ExplainableAI-Vision
+# Explainable Machine Learning - Vision - PyTorch
 
 This repository introduces different Explainable AI approaches and demonstrates how they can be implemented with PyTorch and torchvision. Approaches used in this Jupyter notebook are:
 1. [Class Activation Mappings (CAMs)](https://github.com/metalbubble/CAM)
